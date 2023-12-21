@@ -1,0 +1,423 @@
+/* /doneと/thanksのCSS */
+@media screen and (max-width : 768px){
+.container {
+    font-family: 'Arial', sans-serif;
+}
+}
+
+body {
+    background-color: rgb(232, 232, 232);
+    font-family: 'Arial', sans-serif;
+}
+
+
+h1 {
+    color: #214be0;
+    position: absolute;
+    top: 40px;
+    left: 10%;
+    font-size: 47px;
+}
+
+.done-thanks-frame {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    width: 600px;
+    padding: 140px 50px 140px 50px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px 0px #a0a0a0;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.done-thanks_text {
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.btn-done-thanks input {
+    background-color: #214be0;
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+/* /doneと/thanksCSSはここまで */
+
+/* /loginと/registerのCSShはここから */
+
+.login,
+.register {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    width: 450px;
+    padding: 0px 0px 70px 0px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px 0px #a0a0a0;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.login-btn,
+.register-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    background-color: #214be0;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.login-ttl,
+.register-ttl {
+    width: 450px;
+    background-color: #214be0;
+    color: white;
+    margin-bottom: 25px;
+    padding: 25px 0px 25px 25px;
+    font-size: 26px;
+    border-radius: 8px 8px 0px 0px;
+    text-align: left;
+}
+
+
+.underline-input {
+    color: black;
+    border-bottom: 1px solid black;
+    display: block;
+    margin-bottom: 26px;
+    margin-left: 40px;
+    border: none;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    width: 340px;
+    padding-left: 30px;
+}
+
+/* /loginと/registerのCSShはここまで */
+
+/* /menu1と/menu2のCSSはここから */
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.menu1,
+.menu2 {
+    color: #214be0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu1 a,
+.menu2 a {
+    text-decoration: none;
+}
+.close-btn {
+    position: absolute;
+    top: 30px;
+    left: 8%;
+    width: 40px;
+    height: 40px;
+    background-color: #214be0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0px #a0a0a0;
+}
+
+.close-btn span {
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: rgb(204, 204, 204);
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+}
+
+.close-btn span:first-child {
+    transform: rotate(45deg);
+}
+
+.close-btn span:last-child {
+    transform: rotate(-45deg);
+}
+/* /menu1と/menu2のCSSはここまで */
+
+/* homeはここから */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-ttl {
+    margin: 0;
+}
+
+.search-fields {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.shoplist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 10%;
+}
+
+.shopabout {
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.shopabout:nth-child(n+5) {
+    margin-top: 30px;
+}
+
+.shopabout:nth-of-type(n+5) {
+    margin-top: 25px;
+}
+
+.shopabout {
+    margin-top: 100px;
+    width: 350px;
+    padding: 0px 0px 30px 0px;
+    box-shadow: 5px 5px 5px 0px #a0a0a0;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.shop-img {
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.shopname {
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+
+.shoparea,
+.shopgenre {
+    display: inline-block;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+.shopgenre {
+    padding-left: 1px;
+}
+
+.shopdetail input {
+    background-color: #214be0;
+    color: white;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.shopdetail {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.favorite-button {
+    color: rgb(219, 219, 219);
+    font-size: 40px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.favorite-button.favorited {
+    color: red;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+/* homeはここまで */
+
+/* shopdetailはここから */
+
+
+.shopdata {
+    max-width: 48%;
+    margin-left: 10%;
+    margin-top: 150px;
+    display: block;
+
+}
+
+.shop {
+    font-size: 38px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+}
+
+
+.shopdata input {
+    padding: 3px 10px 3px 10px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    border: none;
+    box-shadow: 3px 3px 3px 0px #a0a0a0;
+    vertical-align: top;
+}
+
+.shopphoto {
+    width: 80%;
+    height: 60%;
+    display: block;
+    margin-top: 30px;
+}
+
+.shoparea-detail,
+.shopgenre-detail {
+    font-size: 20px;
+    display: inline-block;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.shopgenre-detail {
+    padding-left: 3px;
+}
+
+.shopdesc {
+    width: 80%;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.shopreserve {
+    max-width: 48%;
+    position: absolute;
+    left: 55%;
+    width: 38%;
+    height: 90%;
+    top: 50px;
+    background-color: rgb(64, 113, 248);
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px 0px #a0a0a0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.reservettl {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    padding: 40px 0 30px 0px;
+    margin-left: 30px;
+
+}
+
+.datepick {
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 18px;
+    padding: 5px 8px 5px 8px;
+    margin-left: 30px;
+    width: 200px;
+}
+
+.timepick,
+.numbercount {
+    display: flex;
+    font-size: 18px;
+    border-radius: 4px;
+    width: 90%;
+    border: none;
+    margin-bottom: 18px;
+    padding: 5px 8px 5px 8px;
+    margin-left: 30px;
+}
+
+.numbercount {
+    margin-bottom: 28px;
+}
+
+.reservate-detail {
+    color: white;
+    background-color: rgb(92, 144, 249);
+    border-radius: 4px;
+    font-size: 20px;
+    width: 90%;
+    height: 20%;
+    margin-left: 30px;
+
+}
+
+.reservate-detail th,
+.reservate-detail td {
+    text-align: left;
+    padding: 15px 0px 0px 30px;
+}
+
+.reservate-btn {
+    font-size: 15px;
+    color: white;
+    background-color: rgb(22, 68, 255);
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: none;
+    padding: 10px 0 10px 0;
+    cursor: pointer;
+}
+
+
+/* shopdetailはここまで */
+/* はここから */
+/* はここまで */
+/* はここから */
+/* はここまで */
