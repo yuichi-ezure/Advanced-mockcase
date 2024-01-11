@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
-use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
+
 use Laravel\Fortify\Http\Controllers\ConfirmablePasswordController;
 use Laravel\Fortify\Http\Controllers\ConfirmedPasswordStatusController;
 use Laravel\Fortify\Http\Controllers\ConfirmedTwoFactorAuthenticationController;
@@ -13,7 +13,6 @@ use Laravel\Fortify\Http\Controllers\PasswordController;
 use Laravel\Fortify\Http\Controllers\PasswordResetLinkController;
 use Laravel\Fortify\Http\Controllers\ProfileInformationController;
 use Laravel\Fortify\Http\Controllers\RecoveryCodeController;
-use Laravel\Fortify\Http\Controllers\RegisteredUserController;
 use Laravel\Fortify\Http\Controllers\TwoFactorAuthenticatedSessionController;
 use Laravel\Fortify\Http\Controllers\TwoFactorAuthenticationController;
 use Laravel\Fortify\Http\Controllers\TwoFactorQrCodeController;
@@ -27,6 +26,8 @@ use App\Http\Controllers\Menu1Controller;
 use App\Http\Controllers\Menu2Controller;
 use App\Http\Controllers\ReservateController;
 use App\Http\Controllers\FavoriteController;
+use App\Http\Controllers\RegisteredUserController;
+use App\Http\Controllers\AuthenticatedSessionController;
 
 Route::get('/detail/:shop_id', [ShopController::class, 'detail']);
 Route::middleware('auth')->group(function () {
