@@ -6,7 +6,7 @@
     <form action="/register" method="post">
         @csrf
         <div class="form-content">
-            <input type="text" name="username" id="username" placeholder="Username" class="underline-input">
+            <input type="text" name="name" id="username" placeholder="Username" class="underline-input">
             <div class="form__error">
                 <!--バリデーション機能を実装したら記述します。-->
             </div>

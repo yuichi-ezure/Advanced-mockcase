@@ -48,7 +48,7 @@ class RegisteredUserController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Laravel\Fortify\Contracts\CreatesNewUsers  $creator
-     * @return \Laravel\Fortify\Contracts\RegisterResponse
+     * @return \Illuminate\Http\RegisterResponse
      */
     public function store(Request $request,CreatesNewUsers $creator): RegisterResponse
     {
@@ -58,12 +58,9 @@ class RegisteredUserController extends Controller
             ]);
         }
 
-        $user = $creator->create($request->all());
-        dd($user); // ここでデータをダンプ
 
         event(new Registered($user = $creator->create($request->all())));
 
-        //$this->guard->login($user);
 
         return redirect('/thanks');
     }
